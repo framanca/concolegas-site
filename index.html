@@ -4,18 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Concolegas · Juegos de fiesta y marcadores</title>
-  <meta name="description" content="Concolegas: juegos de fiesta y marcadores para jugar con amigos, familia o en clase. Todo en una app." />
+  <meta name="description" content="Concolegas: marcadores de partidas y minijuegos para grupos. Todo en una app." />
   <meta name="theme-color" content="#6c2bd9" />
   <style>
     :root{
       --bg0:#0b0c12;
       --bg1:#11132a;
-      --card:#14162d;
-      --card2:#0f1124;
       --txt:#f3f4ff;
       --mut:#b9b7d6;
       --acc:#7c3aed;
-      --acc2:#22c55e;
       --line:rgba(255,255,255,.10);
       --shadow: 0 18px 60px rgba(0,0,0,.45);
       --r:22px;
@@ -34,10 +31,7 @@
     }
     a{color:inherit}
     .wrap{max-width:1100px;margin:0 auto;padding:22px}
-    .top{
-      display:flex;align-items:center;justify-content:space-between;
-      gap:14px;padding:10px 0 22px;
-    }
+    .top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 0 22px}
     .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
     .logo{
       width:42px;height:42px;border-radius:14px;
@@ -47,6 +41,7 @@
       font-weight:900;
     }
     .brand span{font-weight:800;letter-spacing:.2px}
+
     .pill{
       display:inline-flex;align-items:center;justify-content:center;
       padding:12px 16px;border-radius:999px;
@@ -54,9 +49,7 @@
       background:rgba(255,255,255,.06);
       text-decoration:none;
       transition:transform .12s ease, background .12s ease, border-color .12s ease;
-      gap:10px;
-      user-select:none;
-      white-space:nowrap;
+      gap:10px;user-select:none;white-space:nowrap;
     }
     .pill:hover{transform:translateY(-1px);background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.16)}
     .pill.primary{
@@ -65,6 +58,7 @@
       box-shadow:0 16px 40px rgba(124,58,237,.28);
     }
     .pill.primary:hover{background:linear-gradient(135deg, #8b5cf6, #ff8a34)}
+
     .hero{
       display:grid;
       grid-template-columns: 1.15fr .85fr;
@@ -73,6 +67,7 @@
       margin-top:10px;
     }
     @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+
     .card{
       border:1px solid var(--line);
       background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
@@ -91,12 +86,8 @@
       border:1px solid var(--line);
       background:rgba(0,0,0,.14)
     }
-    .heroRight{
-      padding:18px;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-    }
+
+    .heroRight{padding:18px;display:flex;flex-direction:column;gap:12px}
     .shot{
       border-radius:18px;
       border:1px solid var(--line);
@@ -104,12 +95,8 @@
       overflow:hidden;
     }
     .shot img{display:block;width:100%;height:auto}
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:14px;
-      margin-top:16px;
-    }
+
+    .grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:14px;margin-top:16px}
     @media (max-width:900px){ .grid{grid-template-columns:1fr} }
     .tile{
       background:rgba(0,0,0,.18);
@@ -117,25 +104,17 @@
       border-radius:18px;
       padding:16px;
     }
-    .k{
-      font-weight:800;
-      margin:0 0 6px;
-      display:flex;align-items:center;gap:10px;
-    }
+    .k{font-weight:800;margin:0 0 6px;display:flex;align-items:center;gap:10px}
     .dot{
       width:10px;height:10px;border-radius:999px;
       background:linear-gradient(135deg, #22c55e, #7c3aed);
       box-shadow:0 8px 20px rgba(124,58,237,.25);
     }
     .p{margin:0;color:var(--mut);line-height:1.5;font-size:14px}
+
     .sec{margin-top:18px;padding:22px 22px}
     h2{margin:0 0 10px;font-size:22px}
-    .list{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-      margin-top:10px;
-    }
+    .list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
     @media (max-width:800px){ .list{grid-template-columns:1fr} }
     .li{
       padding:14px 14px;
@@ -152,6 +131,7 @@
       flex:0 0 auto;
       font-weight:900;
     }
+
     .foot{
       margin:22px 0 8px;
       display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;
@@ -177,23 +157,21 @@
 
     <div class="hero">
       <div class="card heroLeft">
-        <h1>Juegos de fiesta y marcadores<br/>todo en una sola app</h1>
+        <h1>Juegos de fiesta y marcadores<br/>en una sola app</h1>
         <p class="sub">
-          Concolegas reúne minijuegos para grupos y hojas de puntuación para tus partidas.
-          Ideal para amigos, familia o clase. Sin líos. En 10 segundos estás jugando.
+          Estamos usando Concolegas para llevar los marcadores de partidas y minijuegos para grupos.
         </p>
 
         <div class="cta" id="descargar">
-          <!-- Cambia los links -->
-          <a class="pill primary" href="https://apps.apple.com/" target="_blank" rel="noopener"> App Store</a>
-          <a class="pill" href="https://play.google.com/" target="_blank" rel="noopener">▶ Google Play</a>
+          <a class="pill primary" href="https://apps.apple.com/app/id6757526238" target="_blank" rel="noopener"> Descargar iOS</a>
+          <a class="pill" href="https://play.google.com/store/apps/details?id=com.concolegas.app" target="_blank" rel="noopener">▶ Descargar Android</a>
         </div>
 
         <div class="mini">
-          <span>🚀 Rápido</span>
           <span>👥 Para grupos</span>
+          <span>🎮 Minijuegos</span>
+          <span>📋 Marcadores</span>
           <span>🌍 Multi-idioma</span>
-          <span>📌 Sin registro obligatorio</span>
         </div>
 
         <div class="grid">
@@ -206,15 +184,14 @@
             <p class="p">Fútbol · Baloncesto · Tenis · Generala/Yatzy · Dominó · Mus/Truc · Marcador libre.</p>
           </div>
           <div class="tile">
-            <p class="k"><span class="dot"></span>Diseño claro</p>
-            <p class="p">Pantallas grandes, botones “píldora”, y todo pensado para jugar en mesa.</p>
+            <p class="k"><span class="dot"></span>Hecho para mesa</p>
+            <p class="p">Pantallas claras, botones grandes y partidas rápidas de iniciar.</p>
           </div>
         </div>
       </div>
 
       <div class="card heroRight">
         <div class="shot">
-          <!-- Pon tus capturas -->
           <img src="assets/shot1.png" alt="Captura 1" />
         </div>
         <div class="shot">
@@ -227,11 +204,11 @@
       <h2>🎮 Juegos (para grupos)</h2>
       <div class="list">
         <div class="li"><div class="badge">🕵️</div><div><b>Infiltrado</b><div class="p">Encuentra al impostor con preguntas rápidas.</div></div></div>
-        <div class="li"><div class="badge">🐺</div><div><b>Mafia / Pueblo duerme</b><div class="p">Narración y roles para partidas fluidas.</div></div></div>
+        <div class="li"><div class="badge">🐺</div><div><b>Mafia / Pueblo duerme</b><div class="p">Roles y narración para partidas fluidas.</div></div></div>
         <div class="li"><div class="badge">🤫</div><div><b>Tabú</b><div class="p">Palabras prohibidas y rondas por tiempo.</div></div></div>
         <div class="li"><div class="badge">🎭</div><div><b>Charadas</b><div class="p">Aciertos/errores y modo por tiempo.</div></div></div>
         <div class="li"><div class="badge">🎲</div><div><b>Dados de historias</b><div class="p">Crea historias con tiradas y cartas.</div></div></div>
-        <div class="li"><div class="badge">🎡</div><div><b>Ruleta</b><div class="p">Reta, elige o decide al azar en grupo.</div></div></div>
+        <div class="li"><div class="badge">🎡</div><div><b>Ruleta</b><div class="p">Decide o reta al azar en grupo.</div></div></div>
       </div>
     </div>
 
@@ -245,20 +222,33 @@
       </div>
     </div>
 
-    <div class="card sec" id="faq">
-      <h2>❓ FAQ</h2>
+    <div class="card sec" id="contacto">
+      <h2>📩 Soporte y contacto</h2>
       <div class="list">
-        <div class="li"><div class="badge">🔒</div><div><b>¿Privacidad?</b><div class="p">Añade aquí tu resumen y enlaza a tu política.</div></div></div>
-        <div class="li"><div class="badge">💡</div><div><b>¿Sugerencias?</b><div class="p">Incluye un email de soporte y un formulario si quieres.</div></div></div>
+        <div class="li">
+          <div class="badge">✉️</div>
+          <div>
+            <b>Email</b>
+            <div class="p">Escríbenos a <a href="mailto:soporte@concolegas.com">soporte@concolegas.com</a></div>
+          </div>
+        </div>
+        <div class="li">
+          <div class="badge">🔒</div>
+          <div>
+            <b>Privacidad</b>
+            <div class="p"><a href="privacy.html">Lee nuestra política de privacidad</a></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="foot">
       <div>© <span id="y"></span> Concolegas</div>
       <div class="links">
-        <!-- Cambia enlaces -->
         <a href="mailto:soporte@concolegas.com">soporte@concolegas.com</a>
         <a href="privacy.html">Privacidad</a>
+        <a href="https://play.google.com/store/apps/details?id=com.concolegas.app" target="_blank" rel="noopener">Google Play</a>
+        <a href="https://apps.apple.com/app/id6757526238" target="_blank" rel="noopener">App Store</a>
       </div>
     </div>
   </div>
