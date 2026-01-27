@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "6VQAV3R3F7.pacomanzo.concolegas",
+        "paths": [ "/join*", "/join/*" ]
+      }
+    ]
+  }
+}
