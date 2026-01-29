@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.pacomanzo.concolegas",
+      "package_name": "com.concolegas.app",
       "sha256_cert_fingerprints": [
         "23:9B:D6:F2:30:C7:45:67:D2:B6:58:B3:87:20:7D:3E:4F:E3:6F:EF:BE:CB:B4:3E:9B:F7:7D:CB:7F:FC:FF:66"
       ]
